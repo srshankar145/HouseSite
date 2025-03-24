@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Real Estate Website</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Overpass:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Recursive:wght@300..1000&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Rufina:wght@400;700&family=Volkhov:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <!-- Header -->
+      <header>
+        <nav class="navbar">
+          <a href="#" class="logo">
+            <span class="logo-icon"></span>
+            Real Estate
+          </a>
+          <ul class="nav-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Properties</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+          <div class="search-icon">
+            <i class="fas fa-search"></i>
+          </div>
+          <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </nav>
+      </header>
+
+      <!-- Hero Section -->
+      <section class="hero">
+        <div class="hero-content">
+          <h1 class="hero-title">Find Your Dream Home</h1>
+          <div class="hero-buttons">
+            <a href="#" class="btn-primary">
+              Get Started
+              <svg
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M5 12H19"
+                  stroke="white"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M12 5L19 12L12 19"
+                  stroke="white"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </a>
+            <a href="#" class="btn-secondary"> Learn More </a>
+          </div>
+
+          <div class="property-section">
+            <div class="property-cards">
+              <div class="property-card">
+                <div class="card-image">
+                  <img
+                    src="../HeroSection_Dsgn/Modern_Architecture1.jpeg"
+                    alt="Skyline Heights"
+                  />
+                </div>
+                <div class="card-content">
+                  <h4 class="property-title">Skyline Heights Residence</h4>
+                  <p class="property-location">Downtown San Francisco</p>
+                  <p class="property-price">$2,560/month</p>
+                  <div class="property-details">
+                    <div class="detail-item">
+                      <i class="fas fa-bed"></i>
+                      <span>3 Bedrooms</span>
+                    </div>
+                    <div class="detail-item">
+                      <i class="fas fa-bath"></i>
+                      <span>2 Bathrooms</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="property-card">
+                <div class="card-image">
+                  <img
+                    src="../HeroSection_Dsgn/Modern_Architecture1.jpeg"
+                    alt="Mountain View"
+                  />
+                </div>
+                <div class="card-content">
+                  <h4 class="property-title">Mountain View Estate</h4>
+                  <p class="property-location">Silicon Valley</p>
+                  <p class="property-price">$3,200/month</p>
+                  <div class="property-details">
+                    <div class="detail-item">
+                      <i class="fas fa-bed"></i>
+                      <span>4 Bedrooms</span>
+                    </div>
+                    <div class="detail-item">
+                      <i class="fas fa-bath"></i>
+                      <span>3 Bathrooms</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="hero-image"></div>
+      </section>
+    </div>
+    <script>
+      // Add this at the end of the body
+      const hamburger = document.querySelector(".hamburger");
+      const navLinks = document.querySelector(".nav-links");
+
+      hamburger.addEventListener("click", () => {
+        navLinks.classList.toggle("active");
+        hamburger.classList.toggle("active");
+      });
+    </script>
+  </body>
+</html>
