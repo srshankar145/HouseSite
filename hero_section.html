@@ -44,91 +44,106 @@
 
       <!-- Hero Section -->
       <section class="hero">
-        <div class="hero-content">
-          <h1 class="hero-title">Find Your Dream Home</h1>
-          <div class="hero-buttons">
-            <a href="#" class="btn-primary">
-              Get Started
-              <svg
-                width="16"
-                height="16"
-                viewBox="0 0 24 24"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M5 12H19"
-                  stroke="white"
+        <!-- Main Hero Image -->
+        <div class="hero-image"></div>
+
+        <!-- Content Grid -->
+        <div class="content-grid">
+          <!-- Main Content Card -->
+          <div class="content-card main-content">
+            <h1 class="hero-title">Find Your Dream Home</h1>
+            <div class="hero-buttons">
+              <a href="#" class="btn-primary">
+                Get Started
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
                   stroke-width="2"
                   stroke-linecap="round"
                   stroke-linejoin="round"
-                />
-                <path
-                  d="M12 5L19 12L12 19"
-                  stroke="white"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                />
-              </svg>
-            </a>
-            <a href="#" class="btn-secondary"> Learn More </a>
+                >
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                  <polyline points="12 5 19 12 12 19"></polyline>
+                </svg>
+              </a>
+              <a href="#" class="btn-secondary">
+                Learn More
+                <span class="arrow-icon">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                    <polyline points="12 5 19 12 12 19"></polyline>
+                  </svg>
+                </span>
+              </a>
+            </div>
           </div>
 
-          <div class="property-section">
-            <div class="property-cards">
-              <div class="property-card">
-                <div class="card-image">
-                  <img
-                    src="./Modern_Architecture1.jpeg"
-                    alt="Skyline Heights"
-                  />
-                </div>
-                <div class="card-content">
-                  <h4 class="property-title">Skyline Heights Residence</h4>
-                  <p class="property-location">Downtown San Francisco</p>
-                  <p class="property-price">$2,560/month</p>
-                  <div class="property-details">
-                    <div class="detail-item">
-                      <i class="fas fa-bed"></i>
-                      <span>3 Bedrooms</span>
-                    </div>
-                    <div class="detail-item">
-                      <i class="fas fa-bath"></i>
-                      <span>2 Bathrooms</span>
-                    </div>
-                  </div>
+          <!-- Property Cards -->
+          <div class="property-cards">
+            <!-- First Property Card -->
+            <div class="property-card">
+              <div class="card-image">
+                <img src="Modern_Architecture1.jpeg" alt="Property" />
+              </div>
+              <div class="card-content">
+                <h3 class="property-title">Skyline Heights Residence</h3>
+                <p class="property-location">123 Luxury Lane, Downtown</p>
+                <p class="property-price">$2,500/month</p>
+                <div class="property-details">
+                  <span class="detail-item">
+                    <i class="fas fa-bed"></i> 2 Beds
+                  </span>
+                  <span class="detail-item">
+                    <i class="fas fa-bath"></i> 2 Baths
+                  </span>
+                  <span class="detail-item">
+                    <i class="fas fa-ruler-combined"></i> 1,200 Sq.Ft
+                  </span>
                 </div>
               </div>
+            </div>
 
-              <div class="property-card">
-                <div class="card-image">
-                  <img src="./Modern_Architecture1.jpeg" alt="Mountain View" />
-                </div>
-                <div class="card-content">
-                  <h4 class="property-title">Mountain View Estate</h4>
-                  <p class="property-location">Silicon Valley</p>
-                  <p class="property-price">$3,200/month</p>
-                  <div class="property-details">
-                    <div class="detail-item">
-                      <i class="fas fa-bed"></i>
-                      <span>4 Bedrooms</span>
-                    </div>
-                    <div class="detail-item">
-                      <i class="fas fa-bath"></i>
-                      <span>3 Bathrooms</span>
-                    </div>
-                  </div>
+            <!-- Second Property Card -->
+            <div class="property-card">
+              <div class="card-image">
+                <img src="Modern_Architecture1.jpeg" alt="Property" />
+              </div>
+              <div class="card-content">
+                <h3 class="property-title">Modern City View</h3>
+                <p class="property-location">456 Urban Street, City Center</p>
+                <p class="property-price">$3,200/month</p>
+                <div class="property-details">
+                  <span class="detail-item">
+                    <i class="fas fa-bed"></i> 3 Beds
+                  </span>
+                  <span class="detail-item">
+                    <i class="fas fa-bath"></i> 2 Baths
+                  </span>
+                  <span class="detail-item">
+                    <i class="fas fa-ruler-combined"></i> 1,500 Sq.Ft
+                  </span>
                 </div>
               </div>
             </div>
           </div>
         </div>
-        <div class="hero-image"></div>
       </section>
     </div>
     <script>
-      // Add this at the end of the body
       const hamburger = document.querySelector(".hamburger");
       const navLinks = document.querySelector(".nav-links");
 
